@@ -24,6 +24,19 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="js/fancybox/dist/jquery.fancybox.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" type="text/css" /> -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/wow.min.js"></script>
+<script type="text/javascript" src="js/fancybox/dist/jquery.fancybox.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/custom.js"></script> -->
+
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +52,68 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- <script>
+       // Testimonial Slider
+		var swiper = new Swiper(".myTestimonial", {
+			slidesPerView: 1,
+			centeredSlides: true,
+			loop: true,
+			autoplay: true,
+			grabCursor: true,
+			init: true,
+			direction: 'horizontal',
+			preloadImages: true,
+			// slidesPerView: 'auto',
+
+			pagination: {
+			el: ".swiper-pagination.testimonial-pagination",
+			clickable: true,
+			},
+		});
+</script> -->
+
+<!-- <script>
+  var a = document.querySelectorAll(".next");
+        for (var i = 0, length = a.length; i < length; i++) {
+            a[i].onclick = function () {
+                var b = document.querySelector("li.active");
+                if (b) {
+                    var items = document.querySelectorAll("li");
+                    // alert(items.length);
+                    var lastchild = items[items.length - 1];
+                    // alert(lastchild);
+                    if (b !== lastchild){
+                        b.classList.remove("active");
+                    }
+                    
+                }
+                b.nextElementSibling.classList.add('active');
+
+                
+            };
+
+
+        }
+
+
+        var r = document.querySelectorAll(".prev");
+        for (var j = 0, prelength = r.length; j < prelength; j++) {
+            // alert(i);
+            r[j].onclick = function () {
+                var bca = document.querySelector("li.active");
+                if (bca) {
+					// alert(i);
+                    var itemspre = document.querySelectorAll("li")[0];
+                    // var lastchildpre = itemspre.children[0];
+                    // alert(lastchild);
+                    if (bca !== itemspre){
+                        bca.classList.remove("active");
+                    }
+                    
+                }
+                bca.previousElementSibling.classList.add('active');
+            };
+        }
+</script> -->
   </body>
 </html>
